@@ -19,7 +19,7 @@ URxvt*terminalName:      rxvt-unicode-256color
 URxvt*visualBell:        false
 
 URxvt.transparent: 	true
-URxvt.tintColor:	#000000
+!URxvt.tintColor:	#000000
 URxvt*shading:		20
 URxvt*blurRadius:	5
 
