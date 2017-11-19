@@ -1,0 +1,1 @@
+/home/richard/.config/polybar/polybar.sh
