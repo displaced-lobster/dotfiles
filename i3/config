@@ -210,4 +210,4 @@ exec_always --no-startup-id ~/.config/polybar/polybar.sh
 # ---- Startup Programs ----
 exec_always --no-startup-id feh --bg-fill /home/richard/.background/background.jpg
 exec --no-startup-id compton -b
-#exec_always --no-startup-id ~/.config/lemonbar/dots/.i3/lemonbar-new/i3_lemonbar.sh
+exec insync start
