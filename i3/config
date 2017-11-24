@@ -36,10 +36,6 @@ set_from_resources $darkcyan	color6	#000000
 set_from_resources $cyan	color14	#000000
 set_from_resources $white	color15	#000000
 
-set $back		#383C4A
-set $primary		#D0D0D0
-set $secondary		#0FE0C9
-set $grey		#303030
 
 # ---- Classes ----
 # client		border		backgr.		text	indicator	child_border
@@ -47,13 +43,13 @@ client.focused		$blue		$blue		$white	$darkblack	$darkblack
 client.focused_inactive	$darkblack	$darkblack	$white	$darkblack	$darkblack
 client.unfocused	$yellow		$yellow		$white	$darkblack	$darkblack
 client.urgent		$darkblack	$darkblack	$white	$darkblack	$darkblack
-client.placeholder	#000000		#0c0c0c		$white	$darkblack	$darkblack
+client.placeholder	$white		#0c0c0c		$white	$darkblack	$darkblack
 client.background	$white
 
 # ---- i3-Gaps ----
 gaps inner 10
 gaps outer 15
-# smart_borders on
+smart_borders on
 new_window none
 
 # ---- Key Bindings ----
