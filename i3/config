@@ -48,7 +48,7 @@ client.background	$white
 
 # ---- i3-Gaps ----
 gaps inner 10
-gaps outer 15
+gaps outer 0
 smart_borders on
 new_window none
 
