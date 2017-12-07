@@ -208,6 +208,7 @@ exec_always --no-startup-id ~/.config/polybar/polybar.sh
 
 
 # ---- Startup Programs ----
-exec_always --no-startup-id feh --bg-fill /home/richard/.background/background.jpg
+exec_always --no-startup-id feh --bg-fill /home/richard/.background/background.*
 exec --no-startup-id compton -b
-exec insync start
+exec --no-startup-id insync start
+exec --no-startup-id bash ~/.scripts/xscreensavestopper.h
