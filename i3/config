@@ -57,7 +57,7 @@ new_window none
 # Audio Control
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
-bindsym XF86AudioMute exec amxier -q set Master mute
+bindsym XF86AudioMute exec amxier -q set Master toggle
 
 bindsym $mod+d exec rofi -show run
 
