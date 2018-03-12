@@ -169,6 +169,11 @@ bindsym $mod+r mode "resize"
 # ---- Bar ----
 exec_always --no-startup-id ~/.config/polybar/polybar.sh
 
+# ---- Assigned Workspaces ----
+assign [class="Firefox"] workspace 3
+assign [class="Atom"] workspace 2
+assign [class="Steam"] workspace 4
+assign [class="Discord"] workspace 5
 
 # ---- Startup Programs ----
 exec_always --no-startup-id feh --bg-fill /home/richard/.background/background.*
