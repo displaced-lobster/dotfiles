@@ -11,7 +11,6 @@ Xft.hintstyle:          hintsfull
 URxvt.internalBorder:    10
 URxvt.externalBorder:    0
 !URxvt.lineSpace:        0
-!urxvt*shading:          30
 URxvt.depth:             32
 URxvt.saveLines:         10000
 URxvt*geometry:          96x30
@@ -20,8 +19,8 @@ URxvt*visualBell:        false
 
 URxvt.transparent: 	true
 !URxvt.tintColor:	#000000
-URxvt*shading:		20
-URxvt*blurRadius:	5
+URxvt*shading:	    60 	
+URxvt*blurRadius:   1	
 
 !! Scrollbar
 !URxvt.scrollStyle:      rxvt
