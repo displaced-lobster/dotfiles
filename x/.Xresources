@@ -1,5 +1,5 @@
 !---- Xft Settins ----
-Xft.dpi:                96
+Xft.dpi:                92
 Xft.autohint:           0       
 Xft.antialias:          true
 Xft.rgba:               rgb
@@ -19,7 +19,7 @@ URxvt*visualBell:        false
 
 URxvt.transparent: 	true
 !URxvt.tintColor:	#000000
-URxvt*shading:	    60 	
+URxvt*shading:	    70 	
 URxvt*blurRadius:   1	
 
 !! Scrollbar
