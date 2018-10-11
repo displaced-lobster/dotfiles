@@ -33,6 +33,7 @@ background-alt = #444
 
 foreground = {xrdb:foreground}
 foreground-alt = #555
+
 primary = #ffb52a
 secondary = #e60053
 alert = ${colors.yellow} 
@@ -40,14 +41,15 @@ alert = ${colors.yellow}
 [bar/top]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 35
+height = 30 
 offset-x = 10
-offset-y = 10
+offset-y = 0 
 ;radius = 6.0
 fixed-center = true
 
-background = ${colors.bg}
-foreground = ${colors.bg-alt}
+background = #00000000 
+foreground = #333
+;foreground = ${colors.bg-alt}
 
 line-size = 2
 ;line-color = #f00
@@ -55,26 +57,26 @@ line-size = 2
 border-size = 4
 border-color = #00000000
 
-padding-left = 2
-padding-right = 2
+padding-left = 0 
+padding-right = 0
+spacing = 1
 
-module-margin-left = 2
+module-margin-left = 0 
 module-margin-right = 0
 
-font-0 = Iosevka Slab:size=10;3
+font-0 = Iosevka Slab:size=11;3
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
-font-3 = FontAwesome:pixelsize=10;0
+font-3 = FontAwesome:pixelsize=11;0
 
-modules-left = bspwm i3
-modules-center = date
-;modules-right = filesystem xbacklight volume xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = volume updates cpu memory wlan
+modules-left = i3 xwindow
+modules-center = 
+modules-right = volume updates cpu memory date wlan
 
 tray-detached = false
 tray-position = right
 tray-padding = 2 
-tray-offset-y = -10
+tray-offset-y = 0
 tray-offset-x = -10
 ;tray-transparent = true
 ;tray-background = #0063ff
@@ -92,7 +94,9 @@ tray-offset-x = -10
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
+label = %title:0:100:...%
+label-padding = 4
+format-foreground = #eee
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -124,16 +128,17 @@ label-unmounted-foreground = ${colors.foreground-alt}
 type = internal/bspwm
 
 label-focused = %index%
-label-focused-background = ${colors.blue}
+label-focused-background = #eee
+;label-focused-background = #88000000 
 label-focused-underline= ${colors.bg-alt}
-label-focused-padding = 1
+label-focused-padding = 3 
 
 label-occupied = %index%
-label-occupied-padding = 1
+label-occupied-padding = 3
 
 label-urgent = %index%!
 label-urgent-background = ${colors.bg-alt}
-label-urgent-padding = 1
+label-urgent-padding = 3
 
 label-empty = %index%
 label-empty-foreground = ${colors.bg-alt}
@@ -148,7 +153,7 @@ wrapping-scroll = false
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
 
-label-mode-padding = 2
+label-mode-padding = 4 
 label-mode-foreground = ${colors.fg}
 ;label-mode-foreground = #000
 label-mode-background = ${colors.bg}
@@ -161,11 +166,12 @@ label-focused-padding = ${module/bspwm.label-focused-padding}
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %icon%
+label-unfocused-background = #666
 label-unfocused-padding = ${module/bspwm.label-occupied-padding}
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %icon%
-label-visible-background = ${self.label-focused-background}
+label-visible-background = {self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
@@ -221,26 +227,36 @@ card = intel_backlight
 type = internal/cpu
 interval = 2
 format-prefix = " "
-format-prefix-foreground = ${colors.yellow}
+format-prefix-foreground = #333 
 ;format-underline = #f90000
 label = %percentage%%
+label-foreground = #333
+format-background = #eee
+format-padding = 2 
 
 [module/memory]
 type = internal/memory
 interval = 2
 format-prefix = " "
-format-prefix-foreground = ${colors.cyan}
+format-prefix-foreground = #333 
 ;format-underline = #4bffdc
 label = %percentage_used%%
+label-foreground = #333
+format-background = #eee
+format-padding = 2
 
 [module/wlan]
 type = internal/network
 interface = wlp7s0 
 interval = 5.0
 
+format-connected-background = #eee
+format-connected-padding = 2
+label-foreground = #333
 format-connected = <ramp-signal> <label-connected>
 ;format-connected-underline = #9f78e1
 label-connected = %essid%
+label-connected-foreground = #333
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -253,7 +269,7 @@ ramp-signal-1 = 
 ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
-ramp-signal-foreground = ${colors.magenta}
+ramp-signal-foreground = #333
 
 [module/eth]
 type = internal/network
@@ -275,7 +291,7 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date = "%A, %B %d  "
+date = %a %b %d,
 date-alt = " %Y-%m-%d"
 
 time = %H:%M
@@ -287,16 +303,28 @@ time-alt = %H:%M:%S
 
 label = %date% %time%
 
+format-background = #333
+format-padding = 5 
+format-foreground = #eee
+
 [module/volume]
 type = internal/volume
 
-format-volume = <label-volume> <bar-volume>
-label-volume = 
-label-volume-foreground = ${colors.cyan-alt}
+format-volume = <ramp-volume> <label-volume>
+label-volume = %percentage%% 
+label-volume-foreground = #
+format-volume-padding = 2
+format-volume-muted = 2
+format-volume-background = #eee
 
+format-muted = <label-muted>
 format-muted-prefix = 
-format-muted-foreground = ${colors.red}
+format-muted-foreground = #333
 label-muted = 
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55

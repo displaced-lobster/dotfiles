@@ -1,5 +1,5 @@
 ! General
-rofi.font:		Iosevka Slab 9
+rofi.font:		Iosevka Slab 12 
 rofi.fake-transparency:	true
 rofi.hide-scrollbar:	true
 
@@ -14,7 +14,9 @@ rofi.fullscreen:	false
 
 ! Colors
 
-rofi.color-window: #002b36, #002b36, #268bd2
-rofi.color-normal: #002b36, #93a1a1, #002b36, #268bd2, #002b36
+!rofi.color-window: #002b36, #002b36, #268bd2
+rofi.color-window: #eee, #eee, #eee
+!rofi.color-normal: #002b36, #93a1a1, #002b36, #268bd2, #002b36
+rofi.color-normal: #eee, #333, #eee, #333, #eee
 rofi.color-active: #002b36, #93a1a1, #002b36, #268bd2, #002b36
 rofi.color-urgent: #002b36, #cb4b16, #002b36, #cb4b16, #93a1a1
