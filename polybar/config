@@ -79,7 +79,7 @@ tray-padding = 2
 tray-offset-y = 0
 tray-offset-x = -10
 ;tray-transparent = true
-;tray-background = #0063ff
+tray-background = #333
 
 ;wm-restack = bspwm
 ;wm-restack = i3
