@@ -312,9 +312,10 @@ type = internal/volume
 
 format-volume = <ramp-volume> <label-volume>
 label-volume = %percentage%% 
-label-volume-foreground = #
+label-volume-foreground = #777
 format-volume-padding = 2
-format-volume-muted = 2
+format-muted-padding = 2
+format-muted-background = #eee
 format-volume-background = #eee
 
 format-muted = <label-muted>
