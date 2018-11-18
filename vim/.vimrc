@@ -32,3 +32,7 @@ set backspace=indent,eol,start
 syntax on
 
 colorscheme sublimemonokai
+
+if has('mouse')
+      set mouse=a
+endif
