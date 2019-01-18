@@ -54,7 +54,7 @@ bindsym $mod+d exec rofi -show run
 floating_modifier $mod
 
 # ---- Terminal ----
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec alacritty 
 
 # kill focused window
 bindsym $mod+Shift+q kill
