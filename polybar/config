@@ -36,18 +36,18 @@ foreground-alt = #555
 
 primary = #ffb52a
 secondary = #e60053
-alert = ${colors.yellow} 
+alert = ${colors.yellow}
 
 [bar/top]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 30 
+height = 30
 offset-x = 10
-offset-y = 0 
+offset-y = 0
 ;radius = 6.0
 fixed-center = true
 
-background = #00000000 
+background = #00000000
 foreground = #333
 ;foreground = ${colors.bg-alt}
 
@@ -57,11 +57,11 @@ line-size = 2
 border-size = 4
 border-color = #00000000
 
-padding-left = 0 
+padding-left = 0
 padding-right = 0
 spacing = 1
 
-module-margin-left = 0 
+module-margin-left = 0
 module-margin-right = 0
 
 font-0 = Iosevka Slab:size=11;3
@@ -70,12 +70,12 @@ font-2 = siji:pixelsize=10;1
 font-3 = FontAwesome:pixelsize=11;0
 
 modules-left = i3 xwindow
-modules-center = 
+modules-center =
 modules-right = volume updates cpu memory date wlan
 
 tray-detached = false
 tray-position = right
-tray-padding = 2 
+tray-padding = 2
 tray-offset-y = 0
 tray-offset-x = -10
 ;tray-transparent = true
@@ -129,9 +129,9 @@ type = internal/bspwm
 
 label-focused = %index%
 label-focused-background = #eee
-;label-focused-background = #88000000 
+;label-focused-background = #88000000
 label-focused-underline= ${colors.bg-alt}
-label-focused-padding = 3 
+label-focused-padding = 3
 
 label-occupied = %index%
 label-occupied-padding = 3
@@ -153,7 +153,7 @@ wrapping-scroll = false
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
 
-label-mode-padding = 4 
+label-mode-padding = 4
 label-mode-foreground = ${colors.fg}
 ;label-mode-foreground = #000
 label-mode-background = ${colors.bg}
@@ -187,6 +187,7 @@ ws-icon-1 = 2;
 ws-icon-2 = 3;
 ws-icon-3 = 4;
 ws-icon-4 = 5;
+ws-icon-5 = 6;
 
 [module/mpd]
 type = internal/mpd
@@ -227,18 +228,18 @@ card = intel_backlight
 type = internal/cpu
 interval = 2
 format-prefix = " "
-format-prefix-foreground = #333 
+format-prefix-foreground = #333
 ;format-underline = #f90000
 label = %percentage%%
 label-foreground = #333
 format-background = #eee
-format-padding = 2 
+format-padding = 2
 
 [module/memory]
 type = internal/memory
 interval = 2
 format-prefix = " "
-format-prefix-foreground = #333 
+format-prefix-foreground = #333
 ;format-underline = #4bffdc
 label = %percentage_used%%
 label-foreground = #333
@@ -247,7 +248,7 @@ format-padding = 2
 
 [module/wlan]
 type = internal/network
-interface = wlp7s0 
+interface = wlp7s0
 interval = 5.0
 
 format-connected-background = #eee
@@ -304,14 +305,14 @@ time-alt = %H:%M:%S
 label = %date% %time%
 
 format-background = #333
-format-padding = 5 
+format-padding = 5
 format-foreground = #eee
 
 [module/volume]
 type = internal/volume
 
 format-volume = <ramp-volume> <label-volume>
-label-volume = %percentage%% 
+label-volume = %percentage%%
 label-volume-foreground = #777
 format-volume-padding = 2
 format-muted-padding = 2
@@ -319,7 +320,7 @@ format-muted-background = #eee
 format-volume-background = #eee
 
 format-muted = <label-muted>
-format-muted-prefix = 
+format-muted-prefix =
 format-muted-foreground = #333
 label-muted = 
 
