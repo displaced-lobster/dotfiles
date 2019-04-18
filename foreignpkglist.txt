@@ -1,0 +1,7 @@
+insync
+otf-font-awesome-4
+polybar
+prezto-git
+spotify
+ttf-font-awesome-4
+ttf-iosevka
