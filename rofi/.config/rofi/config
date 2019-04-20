@@ -1,5 +1,5 @@
 ! General
-rofi.font:		Iosevka Slab 12 
+rofi.font:		Iosevka Slab 25 
 rofi.fake-transparency:	true
 rofi.hide-scrollbar:	true
 
