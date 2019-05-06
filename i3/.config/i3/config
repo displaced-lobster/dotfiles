@@ -56,13 +56,16 @@ floating_modifier $mod
 # ---- Terminal ----
 bindsym $mod+Return exec alacritty 
 
+# --- Lock ----
+bindsym $mod+l exec dm-tool lock
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
-bindsym $mod+l focus up
+#bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
@@ -181,3 +184,5 @@ exec --no-startup-id compton -b
 exec --no-startup-id insync start
 exec --no-startup-id bash ~/.scripts/xscreensaverstopper.h
 exec --no-startup-id udiskie &
+exec --no-startup-id xinput set-prop 15 302 1
+exec --no-startup-id xinput set-prop 15 314 0.7
