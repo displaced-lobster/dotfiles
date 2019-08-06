@@ -186,3 +186,5 @@ exec --no-startup-id bash ~/.scripts/xscreensaverstopper.h
 exec --no-startup-id udiskie &
 exec --no-startup-id xinput set-prop "FocalTechPS/2 FocalTech Touchpad" 303 1
 exec --no-startup-id xinput set-prop "FocalTechPS/2 FocalTech Touchpad" 315 0.7
+exec --no-startup-id cbatticon
+exec --no-startup-id nm-applet
