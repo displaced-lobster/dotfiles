@@ -1,3 +1,5 @@
 *.save
 *.save.*
-background/.background/background.*
+background/.background/*.jpg
+background/.background/*.png
+
