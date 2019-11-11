@@ -15,5 +15,6 @@ alias ls="exa -1"
 alias ll="exa -l"
 alias l="exa -1a"
 alias diff="diff --color=auto"
+alias grep="rg"
 
 export PATH="$PATH:/home/richard/.cargo/bin/"
