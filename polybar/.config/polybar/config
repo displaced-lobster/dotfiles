@@ -71,7 +71,7 @@ font-3 = FontAwesome:pixelsize=30;5
 
 modules-left = i3 xwindow
 modules-center =
-modules-right = volume updates cpu memory date wlan
+modules-right = volume updates cpu memory battery date wlan
 
 tray-detached = false
 tray-position = right
@@ -356,24 +356,24 @@ adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
+format-charging-underline = #333
 
 format-discharging = <ramp-capacity> <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
+format-discharging-underline = #aaa
 
 format-full-prefix = " "
-format-full-prefix-foreground = ${colors.foreground-alt}
-format-full-underline = ${self.format-charging-underline}
+format-full-prefix-foreground = #aaa
+format-full-underline = #333
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
+ramp-capacity-foreground = #333
 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-foreground = #aaa
 animation-charging-framerate = 750
 
 [module/temperature]
