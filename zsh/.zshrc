@@ -18,3 +18,4 @@ alias diff="diff --color=auto"
 alias grep="rg"
 
 export PATH="$PATH:/home/richard/.cargo/bin/"
+export PATH="$PATH:$(yarn global bin)"
