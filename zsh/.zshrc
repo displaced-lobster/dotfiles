@@ -10,6 +10,17 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Start ssh-agent
+SSH_ENV=$HOME/.ssh/environment
+
+# start the ssh-agent
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent > "$XDG_RUNTIME_DIR/ssh-agent.env"
+fi
+if [[ ! "$SSH_AUTH_SOCK" ]]; then
+    eval "$(<"$XDG_RUNTIME_DIR/ssh-agent.env")"
+fi
+
 # Customize to your needs...
 alias ls="exa -1"
 alias ll="exa -l"
@@ -19,3 +30,6 @@ alias grep="rg"
 
 export PATH="$PATH:/home/richard/.cargo/bin/"
 export PATH="$PATH:$(yarn global bin)"
+
+export ANDROID_HOME="$HOME/Android/Sdk"
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
