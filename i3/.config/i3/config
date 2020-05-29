@@ -54,7 +54,7 @@ bindsym $mod+d exec rofi -show run
 floating_modifier $mod
 
 # ---- Terminal ----
-bindsym $mod+Return exec alacritty 
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -177,7 +177,7 @@ assign [class="Discord"] workspace 5
 
 # ---- Startup Programs ----
 exec_always --no-startup-id feh --bg-fill /home/richard/.background/background.*
-exec --no-startup-id compton -b
+exec --no-startup-id picom -b
 exec --no-startup-id insync start
 exec --no-startup-id bash ~/.scripts/xscreensaverstopper.h
 exec --no-startup-id udiskie &
