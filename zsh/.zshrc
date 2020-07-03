@@ -33,3 +33,7 @@ export PATH="$PATH:$(yarn global bin)"
 
 export ANDROID_HOME="$HOME/Android/Sdk"
 export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
+
+export PATH="$HOME/.node_modules/bin:$PATH"
+export npm_config_prefix="$HOME/node_modules"
+
