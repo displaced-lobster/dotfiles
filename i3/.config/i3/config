@@ -177,6 +177,7 @@ assign [class="Discord"] workspace 5
 
 # ---- Startup Programs ----
 exec_always --no-startup-id feh --bg-fill /home/richard/.background/background.*
+exec /usr/bin/lxsession
 exec --no-startup-id picom -b
 exec --no-startup-id insync start
 exec --no-startup-id bash ~/.scripts/xscreensaverstopper.h
