@@ -32,6 +32,8 @@ window:
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: false
 
+  dynamic_title: true
+
   # Window decorations
   #
   # Values for `decorations`:
@@ -87,7 +89,7 @@ font:
     #style: Italic
 
   # Point size
-  size: 16.0
+  size: 14.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -199,7 +201,7 @@ colors:
 #   - Linear
 #
 # Specifying a `duration` of `0` will disable the visual bell.
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 0
   color: '0xffffff'
@@ -260,8 +262,6 @@ selection:
   # the selection clipboard. Otherwise, it will only be copied to the selection
   # clipboard.
   save_to_clipboard: false
-
-dynamic_title: true
 
 cursor:
   # Cursor style
