@@ -27,6 +27,7 @@ alias ll="exa -l"
 alias l="exa -1a"
 alias diff="diff --color=auto"
 alias grep="rg"
+alias chitubox="/opt/CHITUBOX\ V1.7.0/CHITUBOX"
 
 export PATH="$PATH:/home/richard/.cargo/bin/"
 export PATH="$PATH:$(yarn global bin)"
@@ -35,5 +36,6 @@ export ANDROID_HOME="$HOME/Android/Sdk"
 export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
 
 export PATH="$HOME/.node_modules/bin:$PATH"
-export npm_config_prefix="$HOME/node_modules"
+source /usr/share/nvm/init-nvm.sh
 
+eval "$(starship init zsh)"
