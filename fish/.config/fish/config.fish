@@ -13,3 +13,6 @@ alias ll="exa -l"
 alias l="exa -1a"
 alias diff="diff --color=auto"
 alias grep="rg"
+
+function fish_greeting
+end
