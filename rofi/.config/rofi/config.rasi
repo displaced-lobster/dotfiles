@@ -1,0 +1,42 @@
+configuration {
+    display-drun: "";
+    drun-display-format: "{icon} {name}";
+    font: "Iosevka Slab 12";
+    modi: "window,run,drun";
+    show-icons: true;
+    icon-theme: "Papirus";
+}
+
+@theme "/dev/null"
+
+* {
+    active: #02a6a6;
+    bg: #eee;
+    fg: #333;
+
+    background-color: @bg;
+
+    border: 5;
+    margin: 0;
+    padding: 0; 
+    spacing: 0;
+}
+
+window {
+    width: 35%;
+}
+
+element {
+    padding: 2;
+}
+
+element selected {
+    font: "Iosevka Slab Bold 12";
+    text-color: @active;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
