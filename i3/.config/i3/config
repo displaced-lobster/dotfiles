@@ -48,7 +48,7 @@ bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
 bindsym XF86AudioMute exec amxier -q set Master toggle
 
-bindsym $mod+d exec rofi -show run
+bindsym $mod+d exec rofi -show drun
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -179,7 +179,7 @@ assign [class="Discord"] workspace 5
 exec_always --no-startup-id feh --bg-fill /home/richard/.background/background.*
 exec /usr/bin/lxsession
 exec --no-startup-id picom -b
-exec --no-startup-id insync start
+#exec --no-startup-id insync start
 exec --no-startup-id bash ~/.scripts/xscreensaverstopper.h
 exec --no-startup-id udiskie &
 #exec xrandr --output DP-1 --auto --output HDMI-0 --auto --rotate right --left-of DP-1
