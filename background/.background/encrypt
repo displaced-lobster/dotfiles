@@ -1,3 +1,0 @@
-#!/bin/bash
-
-tar czvpf - *.jpg *.png | gpg --symmetric --cipher-algo aes256 -o images.tar.gz.gpg
