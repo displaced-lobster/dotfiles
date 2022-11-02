@@ -9,37 +9,28 @@ set $mod Mod4
 font pango: Noto Sans bold 8
 
 # ---- Colors ----
-set_from_resources $black	color8	#000000
-set_from_resources $darkblack	color0	#000000
-set_from_resources $darkred	color1	#000000
-set_from_resources $red		color9	#000000
-set_from_resources $darkgreen	color2	#000000
-set_from_resources $green	color10	#000000
-set_from_resources $darkyellow	color3	#000000
-set_from_resources $yellow	color11	#000000
-set_from_resources $darkblue	color4	#000000
-set_from_resources $blue	color12 #000000
-set_from_resources $darkmagenta	color5	#000000
-set_from_resources $magenta	color13	#000000
-set_from_resources $darkcyan	color6	#000000
-set_from_resources $cyan	color14	#000000
-set_from_resources $white	color15	#000000
+set $black  #000000
+set $bg	    #333333
+set $fg	    #eeeeee
+set $active #02a6a6
+
 
 
 # ---- Classes ----
 # client		border		backgr.		text	indicator	child_border
-client.focused		$blue		$blue		$white	$darkblack	$darkblack
-client.focused_inactive	$darkblack	$darkblack	$white	$darkblack	$darkblack
-client.unfocused	$yellow		$yellow		$white	$darkblack	$darkblack
-client.urgent		$darkblack	$darkblack	$white	$darkblack	$darkblack
-client.placeholder	$white		#0c0c0c		$white	$darkblack	$darkblack
-client.background	$white
+client.focused		$active		$bg		$fg	$active		$active
+client.focused_inactive	$fg		$bg		$fg	$fg		$fg
+client.unfocused	$bg		$bg		$fg	$fg		$bg
+client.urgent		$fg		$bg		$fg	$fg		$fg
+client.placeholder	$bg		$bg		$fg	$fg		$bg
+client.background	$bg
 
 # ---- i3-Gaps ----
 gaps inner 10
 gaps outer 0
-smart_borders on
 new_window none
+default_border pixel 0
+for_window [class=".*"] border pixel 1
 
 # ---- Key Bindings ----
 #bindsym Control+Mod4+l exec i3lock
