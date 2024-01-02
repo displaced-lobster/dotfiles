@@ -173,4 +173,5 @@ exec --no-startup-id picom -b
 #exec --no-startup-id insync start
 exec --no-startup-id bash ~/.scripts/xscreensaverstopper.h
 exec --no-startup-id udiskie &
+exec --no-startup-id nm-applet &
 #exec xrandr --output DP-1 --auto --output HDMI-0 --auto --rotate right --left-of DP-1
