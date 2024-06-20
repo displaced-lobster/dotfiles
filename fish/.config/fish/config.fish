@@ -10,9 +10,9 @@ set PATH $HOME/.node_modules/bin $PATH
 starship init fish | source
 rtx activate fish | source
 
-alias ls="exa -1"
-alias ll="exa -l"
-alias l="exa -1a"
+alias ls="eza -1"
+alias ll="eza -l"
+alias l="eza -1a"
 alias diff="diff --color=auto"
 alias grep="rg"
 
