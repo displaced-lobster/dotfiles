@@ -8,7 +8,7 @@ set PATH $PATH $HOME/.cargo/bin/
 set PATH $HOME/.node_modules/bin $PATH
 
 starship init fish | source
-rtx activate fish | source
+mise activate fish | source
 
 alias ls="eza -1"
 alias ll="eza -l"
