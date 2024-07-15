@@ -106,6 +106,8 @@
         (command: MoveToTag, value: "7", modifier: ["modkey", "Shift"], key: "7"),
         (command: MoveToTag, value: "8", modifier: ["modkey", "Shift"], key: "8"),
         (command: MoveToTag, value: "9", modifier: ["modkey", "Shift"], key: "9"),
+        (command: Execute, value: "amixer -q set Master 5%+ unmute", modifier: [], key: "XF86AudioRaiseVolume"),
+        (command: Execute, value: "amixer -q set Master 5%- unmute", modifier: [], key: "XF86AudioLowerVolume"),
     ],
     state_path: None,
 )
