@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+export SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
+
+feh --bg-fill ~/,background/backgroud.jpg
+
+leftwm-command "LoadTheme $SCRIPTPATH/theme.ron"
+
+~/.config/polybar/polybar.sh &> /dev/null &

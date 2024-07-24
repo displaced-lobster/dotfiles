@@ -146,9 +146,10 @@ label-empty-padding = 1
 
 [module/ewmh]
 type = internal/xworkspaces
-label-active = " %icon% %name% "
+; label-active = "%icon% %name%"
 label-active-foreground = ${colors.fg}
 label-empty = ""
+label-urgent-background = ${colors.yellow}
 
 [module/i3]
 type = internal/i3
