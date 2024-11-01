@@ -2,7 +2,7 @@
 
 export SCRIPTPATH="$( cd "$(dirname "$0")" ; pwd -P )"
 
-feh --bg-fill ~/,background/backgroud.jpg
+feh --bg-fill ~/.background/backgroud.jpg
 
 leftwm-command "LoadTheme $SCRIPTPATH/theme.ron"
 
