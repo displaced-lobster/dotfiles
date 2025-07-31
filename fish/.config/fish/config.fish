@@ -5,9 +5,7 @@ set -x FASTLANE_USER rmills@quotetome.com
 set -x ELECTRON_OZONE_PLATFORM_HINT auto
 
 set PATH $PATH $ANDROID_HOME/tools
-set PATH $PATH $ANDROID_HOME/platform_tools
 set PATH $PATH $HOME/.cargo/bin/
-set PATH $HOME/.node_modules/bin $PATH
 
 starship init fish | source
 mise activate fish | source
