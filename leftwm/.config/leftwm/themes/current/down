@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-leftwm-commands "UnloadTheme"
-
-pkill polybar
