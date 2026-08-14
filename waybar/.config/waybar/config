@@ -22,7 +22,8 @@
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:L%Y-%m-%d  %H:%M}"
+        "format": "{:L%Y-%m-%d  %H:%M}",
+        "timezone": "America/Los_Angeles"
     },
     "cpu": {
         "format": "  {usage}%",
