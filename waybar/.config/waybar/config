@@ -3,7 +3,6 @@
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 24, // Waybar height (to be removed for auto height)
     "spacing": 4, // Gaps between modules (4px)
-    "output": ["DP-3"],
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
