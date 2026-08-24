@@ -143,7 +143,7 @@ hl.config({
 
 hl.config({
     animations = {
-        enabled = { true, "please:)" },
+        enabled = true,
         -- Default animations, see https://wiki.hyprland.org/Configuring/Animations/ for more
     },
 })
@@ -272,13 +272,13 @@ hl.bind(mainMod .. " + " .. "down", hl.dsp.focus({ direction = "down" }))
 
 -- Move windows with mainMod + shift + arrow keys
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "left", { direction = "l" })
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "left", hl.dsp.window.move({ direction = "left" }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "right", { direction = "r" })
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "right", hl.dsp.window.move({ direction = "right" }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "up", { direction = "u" })
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "up", hl.dsp.window.move({ direction = "up" }))
 
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "down", { direction = "d" })
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "down", hl.dsp.window.move({ direction = "down" }))
 
 -- Switch workspaces with mainMod + [0-9]
 
