@@ -148,6 +148,9 @@ hl.config({
     },
 })
 
+-- Fast global speed (deciseconds); leaves without their own override inherit this
+hl.animation({ leaf = "global", enabled = true, speed = 2, bezier = "default" })
+
 -- Ref https://wiki.hyprland.org/Configuring/Workspace-Rules/
 
 -- "Smart gaps" / "No gaps when only"
