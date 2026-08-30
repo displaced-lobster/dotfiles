@@ -10,7 +10,7 @@ alias ll="eza -l"
 alias l="eza -1a"
 alias diff="diff --color=auto"
 alias grep="rg"
-alias aider="aider --model deepseek/deepseek-chat"
+alias aider="aider --model deepseek/deepseek-chat --no-auto-commits --architect"
 
 function fish_greeting
 end
