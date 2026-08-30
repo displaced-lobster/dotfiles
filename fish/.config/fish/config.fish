@@ -1,10 +1,5 @@
-set -x ANDROID_HOME $HOME/Android/Sdk
-set -x JAVA_HOME /opt/android-studio/jbr
-set -x FASTLANE_USER rmills@quotetome.com
-
 set -x ELECTRON_OZONE_PLATFORM_HINT auto
 
-set PATH $PATH $ANDROID_HOME/tools
 set PATH $PATH $HOME/.cargo/bin/
 
 starship init fish | source
@@ -15,6 +10,7 @@ alias ll="eza -l"
 alias l="eza -1a"
 alias diff="diff --color=auto"
 alias grep="rg"
+alias aider="aider --model deepseek/deepseek-chat"
 
 function fish_greeting
 end
